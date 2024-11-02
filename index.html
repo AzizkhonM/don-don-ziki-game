@@ -10,7 +10,7 @@
 
     <div id="container">
         <div id="title">
-            <h1>TOSH, QOGʻOZ, QAYCHI</h1>
+            <h1 id="title_text">TOSH, QOGʻOZ, QAYCHI</h1>
         </div>
         <div id="user">
             <h1>SIZ</h1>
@@ -19,23 +19,23 @@
             <h1>KOMPYUTER</h1>
         </div>
         <div id="user_score">
-            <h1>0</h1>
+            <h1 id="user_score_num"></h1>
         </div>
         <div id="bot_score">
-            <h1>0</h1>
+            <h1 id="bot_score_num"></h1>
         </div>
         <div id="user_img">
-            <img src="img/qaychi.png" alt="">
+            <img id="user_img_img" draggable="false" src="img/tosh.png" alt="">
         </div>
         <div id="bot_img">
-            <img src="img/qogoz.png" alt="">
+            <img id="bot_img_img" draggable="false" src="img/tosh.png" alt="">
         </div>
-        <div id="rock_button"><button id="tosh">TOSH</button></div>
-        <div id="paper_button"><button id="qogoz">QOGʻOZ</button></div>
-        <div id="scissors_button"><button id="qaychi">QAYCHI</button></div>
-        <!-- <div id="start_button">
+        <div id="rock_button"><button id="tosh" onclick="user_rock(1)">TOSH</button></div>
+        <div id="paper_button"><button id="qogoz" onclick="user_paper(2)">QOGʻOZ</button></div>
+        <div id="scissors_button"><button id="qaychi" onclick="user_scissors(3)">QAYCHI</button></div>
+        <div id="start_button">
             <button onclick="start()" id="boshlash">BOSHLASH</button>
-        </div> -->
+        </div>
     </div>
 
     <audio id="background-music" src="music/The Weeknd feat. Daft Punk - Starboy.mp3" loop></audio>
